@@ -13,6 +13,9 @@ body {
     color: black;
     background-color: bisque;
 }
+#principal {
+    margin-left: 100px;
+}
 
 header {
     background-color: coral;
@@ -27,11 +30,111 @@ header {
 
 #batman {
     height: 100%;
-    width: 80%;
+    width: 100%;
     position: relative;
     margin-top: -50px;
 }
 
 #centro {
     color: white;
+}
+
+header h3 {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 3.2em;
+}
+
+header p {
+    font-family: 'League Gothic', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+nav {
+    background-color: #a6c48a;
+    color: brown;
+    padding: 1em;
+    max-width: 100%;
+    margin-left: 179px;
+    margin-right: 179px;
+}
+
+section {
+    background-color: #40916c;
+    color: brown;
+    padding: 1em;
+    max-width: 100%;
+    min-height: 55em;
+    margin-left: 179px;
+    margin-right: 179px;
+}
+
+footer {
+    background-color: #a6c48a;
+    color: bisque;
+    min-height: 3em;
+    max-height: 100%;
+    margin-left: 179px;
+    margin-right: 179px;
+}
+
+#popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#fechar{
+    position: absolute;
+    right: 80px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    color: azure;
+    font-size: 3em;
+    font-family: 'tahoma';
+    cursor: pointer;
+
+}
+
+#quadro {
+    width: 40%;
+    margin: 15% auto;
+    text-align: center;
+    background-color: beige;
+    padding: 5%;
+    border-radius: 10px;
+
+
+}
+
+#popup input{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+#quadro a{
+        text-decoration: none;
+
+}
+#quadro a:hover {
+    text-decoration: underline;
+}
+
+#msg{
+    color: brown;
+    display: none;
+}
+
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: black;
+    background-color: lightgreen;
+    border-radius: 5px;
+    padding: 4px;
 }
