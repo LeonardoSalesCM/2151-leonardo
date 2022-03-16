@@ -72,6 +72,7 @@ section {
 }
 
 footer {
+    text-shadow: 0.1em 0.1em 0.1em black;
     background-color: #8ac4ba;
     color: bisque;
     min-height: 3em;
@@ -79,6 +80,12 @@ footer {
     margin-left: 179px;
     margin-right: 179px;
     margin-top: -20px;
+}
+
+
+.paisagem1:hover {
+    opacity: 0.5em;
+    border-bottom:2px solid blue;
 }
 
 #popup {
