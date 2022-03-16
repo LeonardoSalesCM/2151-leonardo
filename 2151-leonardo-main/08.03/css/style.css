@@ -8,7 +8,7 @@ body {
 }
 
 #pag {
-    width: 66.6%;
+    width: 68.7%;
     margin: auto;
     color: black;
     background-color: bisque;
@@ -132,11 +132,81 @@ footer {
     display: none;
 }
 
+.paisagem1 {
+    margin: 5%;
+    border-radius: 10px;
+    opacity: 1.0;
+}
+
+#p1-1 {
+    position: absolute;
+    margin-top: -44%;
+    margin-left: -4.5%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#p1-2 {
+    position: absolute;
+    margin-top: -44%;
+    margin-left: 19%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#p1-3 {
+    position: absolute;
+    margin-top: -44%;
+    margin-left: 42.7%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#p1-4 {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 42.7%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#p1-5{
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 19%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+#p1-6 {
+    position: absolute;
+    margin-top: -20%;
+    margin-left: -4.5%;
+    background-color: 0;
+    text-align: center;
+    color: #456b85;
+    text-shadow: 0.1em 0.1em 0.1em black;
+}
+
+
 h4 {
+    width: 30%;
+    margin: 50px;
+    margin-left: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
     color: black;
-    background-color: #a1c8e7;
+    
     border-radius: 5px;
     padding: 20px;
 }
