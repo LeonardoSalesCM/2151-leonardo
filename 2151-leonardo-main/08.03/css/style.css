@@ -147,7 +147,7 @@ footer {
 
 #p1-1 {
     position: absolute;
-    margin-top: -44%;
+    margin-top: -45%;
     margin-left: -4.5%;
     background-color: 0;
     text-align: center;
@@ -157,8 +157,8 @@ footer {
 
 #p1-2 {
     position: absolute;
-    margin-top: -44%;
-    margin-left: 19%;
+    margin-top: -45%;
+    margin-left: 21%;
     background-color: 0;
     text-align: center;
     color: #456b85;
@@ -167,8 +167,8 @@ footer {
 
 #p1-3 {
     position: absolute;
-    margin-top: -44%;
-    margin-left: 42.7%;
+    margin-top: -45%;
+    margin-left: 46.7%;
     background-color: 0;
     text-align: center;
     color: #456b85;
@@ -178,7 +178,7 @@ footer {
 #p1-4 {
     position: absolute;
     margin-top: -20%;
-    margin-left: 42.7%;
+    margin-left: 46.7%;
     background-color: 0;
     text-align: center;
     color: #456b85;
@@ -188,7 +188,7 @@ footer {
 #p1-5{
     position: absolute;
     margin-top: -20%;
-    margin-left: 19%;
+    margin-left: 21%;
     background-color: 0;
     text-align: center;
     color: #456b85;
@@ -249,4 +249,10 @@ ul li a{
 
 ul li a{
     background-color: #6096ba;
+}
+
+#miniaturas {
+    width: 110%;
+    margin: auto;
+    margin-left: -5%;
 }
