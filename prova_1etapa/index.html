@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 1º Etapa - Concessionária de Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="imagem">
+      <img id="foto">
+    </div>
+
+    <div id="titulo">
+      <center>
+      <h1><output id="tit">CONCESSIONÁRIA DE CARROS</output></h1>
+    </center>
+    </div>
+
+    <br><br>
+    <section class="container" id="principal">
+        
+
+        <form class="row g-3" name="formulario">
+            <div class="col-md-6">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="col-md-6">
+              <label for="sobrenome" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="sobrenome" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="leonardotirou10@gmail.com" required>
+            </div>
+            <div class="col-12">
+              <label for="endereco" class="form-label">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="R. Xavier Curado, S/Nº" required>
+            </div>
+            <div class="col-md-4">
+              <label for="cidade" class="form-label">Cidade</label>
+              <input type="text" class="form-control" id="cidade" required>
+            </div>
+            <div class="col-md-4">
+                <label for="estado" class="form-label">Estado</label>
+                <select id="estado" class="form-select" required>
+                  <option selected value="selecione">Selecione...</option>
+                  <option>AC</option>
+                  <option>CE</option>
+                  <option>SP</option>
+                  <option>RJ</option>
+                  <option>MG</option>
+                </select>
+              </div>
+            <div class="col-md-4">
+              <label for="modelo" class="form-label">Modelo</label>
+              <select id="modelo" class="form-select" onchange="fundocarro()" required>
+                <option selected id="selecione2">Selecione...</option>
+                <option value="carro1">Porsche Panamera</option>
+                <option value="carro2">Audi R8</option>
+                <option value="carro3">BMW A8</option>
+              </select>
+            </div>
+            <div class="col-12">
+                <label for="cor" class="form-label">Cor</label>
+                <div class="form-check form-check-inline" required>
+                    <input class="form-check-input" type="radio" name="cor" id="preto" value="preto" onchange="somacor()">
+                    <label class="form-check-label" for="preto">Preto</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cor" id="prata" value="prata" onchange="somacor()">
+                    <label class="form-check-label" for="prata">Prata</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="cor" id="azul" value="azul" onchange="somacor()">
+                    <label class="form-check-label" for="azul">Azul</label>
+                  </div>
+            </div>
+
+            <div class="col-md-6">
+            <label for="adicionais" class="form-label">Acessórios</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="aerofoleo" id="aerofoleo" onchange="acessorios(5000, this.checked)">
+                <label class="form-check-label" for="aerofoleo">
+                  Aerofóleo
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="brake" id="brake" onchange="acessorios(10000, this.checked)">
+                <label class="form-check-label" for="brake">
+                  Brake-light
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="rack" id="rack" onchange="acessorios(8000, this.checked)">
+                <label class="form-check-label" for="brake">
+                  Rack do Teto
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="spoilertras" id="spoilertras" onchange="acessorios(7000, this.checked)">
+                <label class="form-check-label" for="spoilertras">
+                  Spoiler Traseiro
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="spoilerdia" id="spoilerdia" onchange="acessorios(10000, this.checked)">
+                <label class="form-check-label" for="spoilerdia" >
+                  Spoiler Dianteiro
+                </label>
+              </div>
+            </div>
+
+              <div class="col-md-6">
+                  <h1> R$<output id="preco">0</output>,00</h1>
+              </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-success" onclick="validar()">Verificar</button>
+            </div>
+          </form>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
