@@ -1,0 +1,189 @@
+body {
+    color: 181818;
+    overflow-x: hidden;
+}
+
+nav {
+    font-size: large;
+    margin-right: 4%;
+    margin-left: 1%;
+}
+
+.botao-tour {
+    padding: 30px;
+    width: 300px;
+    border-radius: 50px;
+}
+
+.link-donate {
+    background-color: #181818;
+    color: white;
+    border-radius: 10px;
+    font-style: bold;
+    
+}
+
+.link-donate:hover {
+    color: wheat;
+}
+
+navbar {
+    color: white;
+}
+
+.nav-menu{
+    padding-top: 20px;
+}
+hr {
+    color: black;
+    
+}
+.abas-menu {
+    margin-left: 60%;
+}
+.aba {
+    margin-right: 50px;
+}
+.banner {
+
+    margin-right: 15px;
+    margin-left: 120px;
+}
+.titprincipal {
+    font-size: 70px;
+    text-align: center;
+}
+
+.logos {
+    margin-left: 100px;
+    padding-bottom: 80px;
+}
+
+.iniciar-tour {
+    padding: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #181818;
+    border-radius: 10px;
+    color: white;
+}
+
+footer {
+    background-color: #181818;
+}
+
+.redes {
+    margin-right: -16%;
+}
+.icones_redes {
+    margin-left: 21%;
+}
+/* SOBRE */
+
+.banner-sobre {
+    margin-top: -16px;
+    
+}
+
+.conteudo-esquerda {
+    margin-left: 100px;
+    background-color: #181818;
+    color: white;
+    margin-right: 100px;
+    border-radius: 50%;
+    text-align: center;
+    width: 850px;
+}
+.conteudo-direita {
+    margin-left: 400px;
+    background-color: #181818;
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    margin-right: 10px;
+    text-align: center;
+    width: 850px;
+}
+
+/* MUSEU */
+.cardpreto {
+    background: #181818;
+    color: white;
+    
+}
+.img-carro {
+    margin-left: 80px;
+    margin-top: 25px;
+}
+.text-carro {
+    margin-left: -100px;
+    margin-top: 50px
+}
+
+.cardbranco {
+    background: white;
+    color: black;
+}
+#bot-trocarcarro {
+    width: 90%;
+}
+.troca_carros:checked ~ label {
+    background-color: #131627;
+    color: white;
+}
+
+.troca_carros ~ label {
+    padding: 10px;
+    border-style: solid;
+    margin-left: 25%;
+    margin-bottom: 5%;
+}
+
+.troca_carros {
+    display: none;
+    
+}
+.exposicao_classicos{
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+.exposicao_luxuosos{
+    display: none;
+    width: 100%;
+    position: absolute;
+    margin-left: -33.9%;
+}
+.exposicao_velozes{
+    display: none;
+    width: 100%;
+    position: absolute;
+    margin-left: -67.9%;
+}
+
+.troca_carros:checked ~ .exposicao_classicos {
+    display: 
+    block;
+}
+.troca_carros:checked ~ .exposicao_luxuosos {
+    display: block;
+}
+.troca_carros:checked ~ .exposicao_velozes {
+    display: block;
+}
+
+
+
+/* DONATE */
+.form-doacao{
+    border-style: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2%;
+}
+
+.bot-finalizar {
+    padding: 1%;
+    padding-left: 10px;
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextCar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagens/sedan-car-front.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg nav-menu">
+        <div class="container-fluid">
+        <div class="logo">
+          <a class="navbar-brand" href="#">
+            <img src="imagens/nextcar.png" alt="">
+          </a>
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav abas-menu">
+              <a class="nav-link active aba" aria-current="page" href="#">HOME</a>
+              <a class="nav-link aba" href="sobre.html">SOBRE</a>
+              <a class="nav-link aba" href="#">MUSEU</a>
+              <a class="nav-link aba link-donate">DONATE</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+<br><br>
+      <h1 class="container">AJUDE-NOS COM UMA DOAÇÃO!</h1>
+      <br><br>
+
+
+      <div class="form-doacao">
+      <form method="post" name="orcamento" id="orcamento" oninput="calculos(this)" onsubmit="return confirma(this)" action="envio.html" novalidate>
+
+    <div class="row nome_sobrenome">
+        <div class="col">
+          <br>
+          <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+        </div>
+        <div class="col">
+          <br>
+          <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
+        </div>
+      </div>
+      <br><br>
+      <label for="usuario" class="label_tit"> 
+        <h3>OPÇÕES DE PAGAMENTO</h3>
+         </label>                     <div class="clear"></div>
+                    <input type="radio" class="form-check-input" name="tipo" value="Pessoa Física" checked onchange="pessoa('pf')"> <label class="form-check-label"> Pessoa Física </label>
+                    <input type="radio" class="form-check-input" name="tipo" value="Pessoa Jurídica" onchange="pessoa('pj')"> <label class="form-check-label"> Pessoa Jurídica </label>
+                    <div class="clear"></div>
+                    <br>
+                    <div class="row">
+                    <div id="cpf" class="row col-auto" style="margin-left: 0.05%;">
+                        <label for="cpf" class="col-form-label" >CPF </label>
+                        <input type="text" class="form-control" style="margin-right: 50%;" name="cpf" placeholder="xxx.xxx.xxx-xx" onkeypress="mascara_cpf(this)" maxlength="14" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
+                    </div>
+                    
+                                     
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-auto">
+                    <label for="telefone" class="col-form-label"> Telefone </label>
+                    <input type="tel" class="form-control" name="telefone" placeholder="(xx)xxxx-xxxx" onkeypress="mascara_tel(this)" maxlength="13" onkeyup="salto(this.name,this.value)" onkeydown="return somente_numero(event)">
+                    </div>
+
+                    <div class="col-auto" >
+                    <label for="pagamento" class="col-form-label"> Forma de Pagamento </label>
+                    <select class="form-select" name="pagamento" onchange="abrir()">
+                      <option value="selecionar">Selecionar...</option>
+                        <option value="Dinheiro"> Dinheiro </option>
+                        <option value="Cartão"> Cartão </option>
+                        <option value="Cheque"> Cheque </option>
+                    </select>
+                    </div>
+                </div>
+
+                <br>
+
+                    <div id="cartao" class="row">
+                        <fieldset>
+                            <legend> Cartão</legend>
+
+                            <label for="num" class="col-form-label"> Nº do Cartão </label>
+                            <input type="text" name="num" class="form-control">
+
+                            <br>
+                            
+                            <label for="cod" class="col-form-label"> Código Segurança </label>
+                            
+                            <input type="text" name="cod" class="form-control" >
+
+                            <br>
+
+                            <label for="vencimento" class=" col-form-label"> Vencimento </label>
+                            
+                            <input type="month" name="mes" class="form-control" >
+                        </fieldset>
+                    </div> 
+
+                    <div class="row">
+                      <fieldset>
+                        <legend>Definir Valor de Doação</legend>
+
+                        <select class="form-select" name="valor" onchange="abrir()">
+                          <option value="10"> R$ 10,00 </option>
+                          <option value="20"> R$ 20,00 </option>
+                          <option value="50"> R$ 50,00 </option>
+                          <option value="100"> R$ 100,00 </option>
+                      </select>
+
+
+                      </fieldset>
+                    </div>
+
+
+                    <br><br>
+                    <center>
+                      <input type="submit" value="Finalizar" class="bot-finalizar">
+                  </center>          
+
+
+      <br>
+    </form> 
+
+  </div>
+
+  <br><br><br>
+
+<footer>
+    <br><br>
+    <center>
+    <div class="row icones_redes">
+      <div class="col-4 redes"><img src="imagens/facebook-4-64.png" alt="" width="50px" height="50px"></div>
+      <div class="col-4 redes"><img src="imagens/instagram-4-64.png" alt="" width="50px" height="50px"></div>
+      <div class="col-4"><img src="imagens/twitter-4-64.png" alt="" width="50px" height="50px"></div>
+    </div>
+  </center>
+    <br><br>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
